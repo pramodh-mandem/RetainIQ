@@ -1,4 +1,4 @@
-<title>Building WorkforceIQ</title>
+<title>Building RetainIQ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -365,11 +365,11 @@ footer a { color: var(--accent); }
 @media (max-width: 620px) { .tool { grid-template-columns: 1fr; gap: 2px; } }
 </style>
 <header class="masthead"><div class="wrap">
-<div class="eyebrow">WorkforceIQ &middot; build walkthrough</div>
+<div class="eyebrow">RetainIQ &middot; build walkthrough</div>
 <h1>How this was built</h1>
 <p class="sub">Every step, every tool, and the real output each command produced. The terminal blocks below are captured stdout from actually running the pipeline &mdash; not prose describing what it would print.</p>
 <div class="meta-row"><div><b>10</b> pipeline steps</div><div><b>8</b> analytical SQL views</div><div><b>22</b> DAX measures</div><div><b>13</b> bugs found and fixed</div><div><b>28</b> commits</div></div></div></header>
-<nav class="navbar"><div class="wrap navbar-inner"><a href="#tools">Tools</a><a href="#flow">Pipeline</a><a href="#steps">Steps &amp; output</a><a href="#report">The report</a><a href="#results">What we got</a><a href="#bugs">Bugs</a><a href="https://vuday3336.github.io/WorkforceIQ--Analysis/">&larr; Dashboard</a></div></nav>
+<nav class="navbar"><div class="wrap navbar-inner"><a href="#tools">Tools</a><a href="#flow">Pipeline</a><a href="#steps">Steps &amp; output</a><a href="#report">The report</a><a href="#results">What we got</a><a href="#bugs">Bugs</a><a href="https://pramodh-mandem.github.io/RetainIQ/">&larr; Dashboard</a></div></nav>
 <main class="wrap">
 <section class="finding" id="tools"><div class="finding-head"><div class="fnum">00</div><div><h2>What was installed, and why each one</h2><p class="qline">Eight libraries plus PostgreSQL and Power BI Desktop.</p></div></div><div class="body-col">
 <div class="card"><div class="card-title">Chosen for a reason, not by habit</div>
@@ -821,7 +821,7 @@ PARITY OK: all 13 checks identical on PostgreSQL and DuckDB
 <div class="card"><div class="card-title">Executive Overview</div><div class="card-note">Headline KPIs, crude vs tenure-adjusted attrition by department, the quarterly trend against its rolling 4-quarter window, and the department scorecard showing observed against expected leavers.</div><img class="shot" loading="lazy" alt="Executive Overview" src="dashboard_screenshots/01_executive.png"></div>
 <div class="card"><div class="card-title">Tenure &amp; Cohort Analysis</div><div class="card-note">Headcount and attrition rate per cohort, each cohort's share of total outflow, and the department &times; cohort matrix. The highest rate and the largest share of leavers are different cohorts.</div><img class="shot" loading="lazy" alt="Tenure &amp;amp; Cohort Analysis" src="dashboard_screenshots/02_tenure.png"></div>
 <div class="card"><div class="card-title">Compensation &amp; Satisfaction</div><div class="card-note">Attrition by in-role pay quartile, the overtime &times; satisfaction cross-segment with lift against the base rate, and the span-of-control chart reporting a negative result.</div><img class="shot" loading="lazy" alt="Compensation &amp;amp; Satisfaction" src="dashboard_screenshots/03_compensation.png"></div>
-<div class="card"><div class="card-title">Attrition Risk Watchlist</div><div class="card-note">Every active employee ranked by modelled flight risk, with the rule-based heuristic beside the model score, plus department and tier slicers.</div><img class="shot" loading="lazy" alt="Attrition Risk Watchlist" src="dashboard_screenshots/04_watchlist.png"></div>
+<div class="card"><div class="card-title">Attrition Risk Watchlist</div><div class="card-note">Every active employee ranked by modelled attrition risk, with the rule-based heuristic beside the model score, plus department and tier slicers.</div><img class="shot" loading="lazy" alt="Attrition Risk Watchlist" src="dashboard_screenshots/04_watchlist.png"></div>
 </div></section>
 <section class="finding" id="results"><div class="finding-head"><div class="fnum">04</div><div><h2>What we got out of it</h2><p class="qline">The findings the pipeline actually produced.</p></div></div><div class="body-col">
 <div class="card"><div class="card-title">The three findings that matter</div>
@@ -856,4 +856,4 @@ PARITY OK: all 13 checks identical on PostgreSQL and DuckDB
 <div class="takeaway"><b>Two structural changes were made so that class cannot recur silently.</b> An unmapped column type now raises instead of defaulting to string, so a new type fails the build rather than shipping a silently wrong model. And every Power BI projection reference is validated against its query before commit.</div>
 </div></section>
 </main>
-<footer class="wrap"><h3>WorkforceIQ</h3><p><a href="https://vuday3336.github.io/WorkforceIQ--Analysis/">Live dashboard</a> &middot; <a href="https://github.com/Vuday3336/WorkforceIQ--Analysis">Repository</a> &middot; <a href="https://github.com/Vuday3336/WorkforceIQ--Analysis/blob/main/docs/sql_findings.md">SQL findings</a> &middot; <a href="https://github.com/Vuday3336/WorkforceIQ--Analysis/blob/main/docs/PROJECT_WALKTHROUGH.md">Written walkthrough</a></p></footer>
+<footer class="wrap"><h3>RetainIQ</h3><p><a href="https://pramodh-mandem.github.io/RetainIQ/">Live dashboard</a> &middot; <a href="https://github.com/pramodh-mandem/RetainIQ">Repository</a> &middot; <a href="https://github.com/pramodh-mandem/RetainIQ/blob/main/docs/sql_findings.md">SQL findings</a> &middot; <a href="https://github.com/pramodh-mandem/RetainIQ/blob/main/docs/PROJECT_WALKTHROUGH.md">Written walkthrough</a></p></footer>
