@@ -1,11 +1,10 @@
-# WorkforceIQ — How It Was Built
+# RetainIQ — How It Was Built
 
 A pin-to-pin account of the project: every layer, every tool, why each choice was
-made, what went wrong, and how to reproduce it. Written to be the document you
-revise from before an interview.
+made, what went wrong, and how to reproduce it.
 
-**Live dashboard:** https://vuday3336.github.io/WorkforceIQ--Analysis/
-**Repository:** https://github.com/Vuday3336/WorkforceIQ--Analysis
+**Live dashboard:** https://pramodh-mandem.github.io/RetainIQ/
+**Repository:** https://github.com/pramodh-mandem/RetainIQ
 
 ---
 
