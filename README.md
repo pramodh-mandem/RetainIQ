@@ -1,16 +1,16 @@
-# WorkforceIQ
+# RetainIQ — Workforce Attrition Analytics
 
 **HR analytics and attrition-risk platform** — a normalised PostgreSQL schema, an
 analytical SQL layer, a Power BI semantic model with time-intelligence DAX, and a
 scikit-learn model whose output feeds back into the database.
 
-### **[▶ Open the live dashboard](https://vuday3336.github.io/WorkforceIQ--Analysis/)**
+### **[▶ Open the live dashboard](https://pramodh-mandem.github.io/RetainIQ/)**
 
 Six findings, a tenure-controlled department ranking, and a filterable
-flight-risk watchlist. Every figure on it is computed by the SQL view named in
+attrition risk watchlist. Every figure on it is computed by the SQL view named in
 its section — nothing is hand-entered.
 
-**Jump to:** [**illustrated build log**](https://vuday3336.github.io/WorkforceIQ--Analysis/how-it-was-built.html) ·
+**Jump to:** [**illustrated build log**](https://pramodh-mandem.github.io/RetainIQ/how-it-was-built.html) ·
 [written walkthrough](docs/PROJECT_WALKTHROUGH.md) ·
 [SQL findings](docs/sql_findings.md) ·
 [the Power BI report](#4-power-bi) ·
